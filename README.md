@@ -5,7 +5,7 @@ Created on Fri Oct 11 16:30:54 2013
 
 PhantomViewer: Main class to display and analyze phantom data, mostly MRI data
 
-modules required (most can be installed using 'pip install package' or  'pip install package --upgrade':
+Modules required (most can be installed using 'pip install package' or  'pip install package --upgrade':
 verify module version using "pip show module"
 
    Anaconda 3 with Python 3.7    (64 bit, Python, PyQT5, Numpy, Scipy, Pillow )
