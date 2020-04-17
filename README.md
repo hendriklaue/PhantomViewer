@@ -22,5 +22,7 @@ Uses PhantomViewerGui created from PhantomViewer.ui by Qt Designer
 @author: Stephen Russek
 Units: times in ms, distances in mm, ADC in mm2/s, Temperature in C,
 
-VPhantom: class to describe phantoms, several virtual phantoms, including the NIST/ISMRM system phantom are available
+VPhantom: class to describe phantoms, several virtual phantoms, including the NIST/ISMRM system phantom are available.
+PV structure is shown below
 
+![PV Structure](https://github.com/StephenRussek/PhantomViewerNew/blob/master/icons/PVstructure.jpg)
