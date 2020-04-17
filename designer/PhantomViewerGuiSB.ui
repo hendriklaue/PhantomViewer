@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PhantomViewerGui</class>
+ <widget class="QMainWindow" name="PhantomViewerGui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1714</width>
+    <height>879</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>691</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QLabel" name="label_26">
+        <property name="text">
+         <string>Phantom Type</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="lblPhantomType">
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_40">
+        <property name="text">
+         <string>Current ROI set</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QTextEdit" name="lblROISet">
+           <property name="frameShape">
+            <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QScrollBar" name="hsROISet">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QSplitter" name="splitter_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Image Directory/ filename</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="lblFileName">
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+        <property name="lineWrapMode">
+         <enum>QTextEdit::FixedColumnWidth</enum>
+        </property>
+        <property name="lineWrapColumnOrWidth">
+         <number>80</number>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>740</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>0</y>
+       <width>731</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Series</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="lblSeries">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Date</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="lblDate">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_58">
+            <property name="text">
+             <string>File Type</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_59">
+            <property name="text">
+             <string>DataType</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QTextEdit" name="lblFileType">
+            <property name="frameShape">
+             <enum>QFrame::WinPanel</enum>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QTextEdit" name="lblDataType">
+            <property name="frameShape">
+             <enum>QFrame::WinPanel</enum>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Manufacturer</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="lblManufacturer">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Protocol</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="lblProtocol">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="cbOperateOnAllImages">
+          <property name="text">
+           <string>Operate on All Images</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Phantom ID</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="lblPatient">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Institution</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="lblInstitution">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="rbViewDicomHeader">
+          <property name="text">
+           <string>View image header</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Pixel Bandwidth (Hz)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="lblBW">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Field(T)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="lblField">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_31">
+          <property name="text">
+           <string>Recieve coil</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="lblReceiveCoil">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_42">
+          <property name="text">
+           <string>Transmit coil</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="lblTransmitCoil">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <zorder>label_3</zorder>
+    <zorder>lblSeries</zorder>
+    <zorder>lblDate</zorder>
+    <zorder>label_4</zorder>
+    <zorder>lblManufacturer</zorder>
+    <zorder>lblField</zorder>
+    <zorder>label_5</zorder>
+    <zorder>label_6</zorder>
+    <zorder>lblProtocol</zorder>
+    <zorder>label_7</zorder>
+    <zorder>lblPatient</zorder>
+    <zorder>label_8</zorder>
+    <zorder>lblBW</zorder>
+    <zorder>label_9</zorder>
+    <zorder>lblInstitution</zorder>
+    <zorder>lblReceiveCoil</zorder>
+    <zorder>label_31</zorder>
+    <zorder>label_58</zorder>
+    <zorder>lblDataType</zorder>
+    <zorder>label_59</zorder>
+    <zorder>lblFileType</zorder>
+    <zorder>label</zorder>
+    <zorder>rbViewDicomHeader</zorder>
+    <zorder>label_42</zorder>
+    <zorder>lblTransmitCoil</zorder>
+    <zorder>cbOperateOnAllImages</zorder>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1714</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAnalysis">
+    <property name="title">
+     <string>Analysis</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionT1_Analysis"/>
+    <addaction name="actionT2_Analysis"/>
+    <addaction name="actionProton_density_SNR"/>
+    <addaction name="actionFiducial"/>
+    <addaction name="actionFiducial_Array_Analysis"/>
+    <addaction name="actionSlice_Profile"/>
+    <addaction name="actionDiffusion"/>
+    <addaction name="separator"/>
+    <addaction name="actionResolution_Inset"/>
+   </widget>
+   <widget class="QMenu" name="menu_Instructions">
+    <property name="title">
+     <string>Instructions</string>
+    </property>
+    <addaction name="actionGeometric_DIstortion"/>
+    <addaction name="actionProton_Density_Noise"/>
+    <addaction name="actionSlice_thickness"/>
+   </widget>
+   <widget class="QMenu" name="menuPhantom_properties">
+    <property name="title">
+     <string>Phantoms</string>
+    </property>
+    <addaction name="actionOpenPhantomFile"/>
+    <addaction name="actionSave_phantom_file"/>
+    <addaction name="actionSystem_Phantom"/>
+    <addaction name="actionDiffusion_Phantom"/>
+    <addaction name="actionBreast_Phantom"/>
+    <addaction name="actionNIST_hcp_Phantom"/>
+    <addaction name="actionNIST_hcp_Coronal_Phantom"/>
+    <addaction name="actionNIST_KT_Phantom"/>
+    <addaction name="actionShowPhantomInfo"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>3dTools</string>
+    </property>
+    <addaction name="action3dViewer"/>
+    <addaction name="separator"/>
+    <addaction name="actionView3D_color"/>
+    <addaction name="actionView3D_transparency"/>
+    <addaction name="actionView3D_invert_image"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>ImageFiles</string>
+    </property>
+    <addaction name="actionSelectImages"/>
+    <addaction name="actionClear_All_Images"/>
+    <addaction name="actionDelete_Current_Image"/>
+    <addaction name="actionWrite_Animated_GIF"/>
+    <addaction name="actionWrite_to_DICOM"/>
+   </widget>
+   <widget class="QMenu" name="menuROIs">
+    <property name="title">
+     <string>ROIs</string>
+    </property>
+    <widget class="QMenu" name="menuROI_Line">
+     <property name="title">
+      <string>ROI Line</string>
+     </property>
+     <addaction name="actionThin"/>
+     <addaction name="actionMedium"/>
+     <addaction name="actionThick"/>
+    </widget>
+    <addaction name="actionShowHide_ROIs"/>
+    <addaction name="actionReset_ROIs"/>
+    <addaction name="actionROI_Color"/>
+    <addaction name="menuROI_Line"/>
+    <addaction name="actionLabel_Color"/>
+    <addaction name="actionSave_ROI_arrays"/>
+    <addaction name="actionCrop_to_ROI"/>
+    <addaction name="actionPlot_ROI_vs_Index"/>
+   </widget>
+   <widget class="QMenu" name="menuReports">
+    <property name="title">
+     <string>Reports</string>
+    </property>
+    <addaction name="actionFitting_Results"/>
+    <addaction name="actionSave_Results"/>
+    <addaction name="actionClear_Report"/>
+    <addaction name="actionSaveDataFiles"/>
+   </widget>
+   <widget class="QMenu" name="menuFit_Options">
+    <property name="title">
+     <string>Fit Options</string>
+    </property>
+    <addaction name="actionInitial_Guess"/>
+    <addaction name="actionMake_Map"/>
+   </widget>
+   <widget class="QMenu" name="menuImageStacks">
+    <property name="title">
+     <string>ImageStacks</string>
+    </property>
+    <addaction name="actionSort_on_Slice_Loc"/>
+    <addaction name="actionSort_on_TE"/>
+    <addaction name="actionDuplicate_Image_Stack"/>
+    <addaction name="actionChange_Image_Stack"/>
+    <addaction name="actionShow_Image_Stack"/>
+   </widget>
+   <widget class="QMenu" name="menuImageProcessing">
+    <property name="title">
+     <string>ImageProcessing</string>
+    </property>
+    <addaction name="actionPhase_Unwrap"/>
+    <addaction name="actionPlane_Background_Subtract"/>
+    <addaction name="actionParabola_Background_Subtract"/>
+    <addaction name="actionImage_Subtraction"/>
+    <addaction name="actionDown_Sample"/>
+    <addaction name="actionInterpolate"/>
+    <addaction name="actionSetScaleSlopeto1_0"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuImageStacks"/>
+   <addaction name="menuPhantom_properties"/>
+   <addaction name="menuROIs"/>
+   <addaction name="menuAnalysis"/>
+   <addaction name="menuImageProcessing"/>
+   <addaction name="menuFit_Options"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuReports"/>
+   <addaction name="menu_Instructions"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGeometric_DIstortion">
+   <property name="text">
+    <string>Geometric Distortion Instr.</string>
+   </property>
+  </action>
+  <action name="actionProton_Density_Noise">
+   <property name="text">
+    <string>Proton Density/Noise</string>
+   </property>
+  </action>
+  <action name="actionSlice_thickness">
+   <property name="text">
+    <string>Slice thickness</string>
+   </property>
+  </action>
+  <action name="actionROI_properties">
+   <property name="text">
+    <string>ROI properties</string>
+   </property>
+  </action>
+  <action name="action3dViewer">
+   <property name="text">
+    <string>View3d</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Phase Unwrap</string>
+   </property>
+  </action>
+  <action name="actionSystem_Phantom">
+   <property name="text">
+    <string>System Phantom</string>
+   </property>
+  </action>
+  <action name="actionT1_Analysis">
+   <property name="text">
+    <string>T1 Analysis</string>
+   </property>
+  </action>
+  <action name="actionProton_density_SNR">
+   <property name="text">
+    <string>Proton density/ SNR</string>
+   </property>
+  </action>
+  <action name="actionT2_Analysis">
+   <property name="text">
+    <string>T2 Analysis</string>
+   </property>
+  </action>
+  <action name="actionThin">
+   <property name="text">
+    <string>Thin</string>
+   </property>
+  </action>
+  <action name="actionMedium">
+   <property name="text">
+    <string>Medium</string>
+   </property>
+  </action>
+  <action name="actionThick">
+   <property name="text">
+    <string>Thick</string>
+   </property>
+  </action>
+  <action name="actionWrite_to_DICOM">
+   <property name="text">
+    <string>Write to DICOM</string>
+   </property>
+  </action>
+  <action name="actionSelectImages">
+   <property name="text">
+    <string>Select/Add Images</string>
+   </property>
+   <property name="toolTip">
+    <string>Opens DICOM, DicomDir, tif, fdf</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionClear_All_Images">
+   <property name="text">
+    <string>Clear All Images</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPhase_Unwrap">
+   <property name="text">
+    <string>Phase Unwrap</string>
+   </property>
+  </action>
+  <action name="actionPlane_Background_Subtract">
+   <property name="text">
+    <string>Plane Background Subtract</string>
+   </property>
+  </action>
+  <action name="actionParabola_Background_Subtract">
+   <property name="text">
+    <string>Parabola Background Subtract</string>
+   </property>
+  </action>
+  <action name="actionDelete_Current_Image">
+   <property name="text">
+    <string>Delete Current Image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionOpen_ROI_File">
+   <property name="text">
+    <string>Open ROI File</string>
+   </property>
+  </action>
+  <action name="actionShowHide_ROIs">
+   <property name="text">
+    <string>Show/Hide ROIs</string>
+   </property>
+  </action>
+  <action name="actionReset_ROIs">
+   <property name="text">
+    <string>Reset/Update ROIs</string>
+   </property>
+  </action>
+  <action name="actionShow_ROI_Properties">
+   <property name="text">
+    <string>Show ROI Info</string>
+   </property>
+  </action>
+  <action name="actionFitting_Results">
+   <property name="text">
+    <string>Show Report</string>
+   </property>
+  </action>
+  <action name="actionSave_ROI_File">
+   <property name="text">
+    <string>Save ROI File</string>
+   </property>
+  </action>
+  <action name="actionSave_Results">
+   <property name="text">
+    <string>Save Report</string>
+   </property>
+  </action>
+  <action name="actionUpdate_ROIs">
+   <property name="text">
+    <string>update ROIs</string>
+   </property>
+  </action>
+  <action name="actionOpen_DICOMDIR">
+   <property name="text">
+    <string>Open DICOMDIR</string>
+   </property>
+  </action>
+  <action name="actionDiffusion_Phantom">
+   <property name="text">
+    <string>Diffusion Phantom</string>
+   </property>
+  </action>
+  <action name="actionBreast_Phantom">
+   <property name="text">
+    <string>Breast Phantom</string>
+   </property>
+  </action>
+  <action name="actionDiffusion">
+   <property name="text">
+    <string>Diffusion</string>
+   </property>
+  </action>
+  <action name="actionNIST_hcp_Phantom">
+   <property name="text">
+    <string>NIST hcp Phantom</string>
+   </property>
+  </action>
+  <action name="actionOpenPhantomFile">
+   <property name="text">
+    <string>Open phantom file</string>
+   </property>
+  </action>
+  <action name="actionInitial_Guess">
+   <property name="text">
+    <string>Initial Guess</string>
+   </property>
+  </action>
+  <action name="actionROI_Color">
+   <property name="text">
+    <string>ROI Color</string>
+   </property>
+  </action>
+  <action name="actionClear_Report">
+   <property name="text">
+    <string>Clear Report</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionNIST_KT_Phantom">
+   <property name="text">
+    <string>NIST KT Phantom</string>
+   </property>
+  </action>
+  <action name="actionNIST_hcp_Coronal_Phantom">
+   <property name="text">
+    <string>NIST hcp Coronal Phantom</string>
+   </property>
+  </action>
+  <action name="actionShowPhantomInfo">
+   <property name="text">
+    <string>Show current phantom info</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionSave_phantom_file">
+   <property name="text">
+    <string>Save phantom file</string>
+   </property>
+  </action>
+  <action name="actionView3D_color">
+   <property name="text">
+    <string>View3D color</string>
+   </property>
+  </action>
+  <action name="actionView3D_transparency">
+   <property name="text">
+    <string>View3D transparency</string>
+   </property>
+  </action>
+  <action name="actionImage_Subtraction">
+   <property name="text">
+    <string>Image Subtraction</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Subtract specified image from all the other images&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actionWrite_Animated_GIF">
+   <property name="text">
+    <string>Write Animated GIF</string>
+   </property>
+  </action>
+  <action name="actionView3D_invert_image">
+   <property name="text">
+    <string>View3D invert image</string>
+   </property>
+  </action>
+  <action name="actionSort_on_Slice_Loc">
+   <property name="text">
+    <string>Sort on Slice Loc</string>
+   </property>
+  </action>
+  <action name="actionSort_on_TE">
+   <property name="text">
+    <string>Sort on TE</string>
+   </property>
+  </action>
+  <action name="actionDown_Sample">
+   <property name="text">
+    <string>Down Sample</string>
+   </property>
+  </action>
+  <action name="actionInterpolate">
+   <property name="text">
+    <string>Interpolate</string>
+   </property>
+  </action>
+  <action name="actionCrop_to_ROI">
+   <property name="text">
+    <string>Crop to ROI</string>
+   </property>
+  </action>
+  <action name="actionDuplicate_Image_Stack">
+   <property name="text">
+    <string>Duplicate Image Stack</string>
+   </property>
+  </action>
+  <action name="actionChange_Image_Stack">
+   <property name="text">
+    <string>Change Image Stack</string>
+   </property>
+  </action>
+  <action name="actionPlot_ROI_vs_Index">
+   <property name="text">
+    <string>Plot ROI vs Index</string>
+   </property>
+  </action>
+  <action name="actionSaveDataFiles">
+   <property name="text">
+    <string>SaveDataFiles</string>
+   </property>
+  </action>
+  <action name="actionSetScaleSlopeto1_0">
+   <property name="text">
+    <string>Set Scale/Slope to1,0</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Undo Phillips scaling protocol&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actionMake_Map">
+   <property name="text">
+    <string>Make Map</string>
+   </property>
+  </action>
+  <action name="actionSave_ROI_arrays">
+   <property name="text">
+    <string>Save ROI arrays</string>
+   </property>
+  </action>
+  <action name="actionFiducial">
+   <property name="text">
+    <string>Fiducial Array Setup</string>
+   </property>
+  </action>
+  <action name="actionSlice_Profile">
+   <property name="text">
+    <string>Slice Profile</string>
+   </property>
+  </action>
+  <action name="actionGenerate_SynImage">
+   <property name="text">
+    <string>Generate Synthetic Image</string>
+   </property>
+  </action>
+  <action name="actionBlur_Image">
+   <property name="text">
+    <string>Blur Image</string>
+   </property>
+  </action>
+  <action name="actionResolution_Inset">
+   <property name="text">
+    <string>Resolution Inset</string>
+   </property>
+  </action>
+  <action name="actionShow_Image_Stack">
+   <property name="text">
+    <string>Show Image Stack</string>
+   </property>
+  </action>
+  <action name="actionLabel_Color">
+   <property name="text">
+    <string>Label Color</string>
+   </property>
+  </action>
+  <action name="actionFiducial_Array_Analysis">
+   <property name="text">
+    <string>Fiducial Array Analysis</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>PhantomViewerGui</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>768</x>
+     <y>477</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
